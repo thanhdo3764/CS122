@@ -1,0 +1,64 @@
+<h1>Calculator</h1>
+<h2>Goals</h2>
+<p>In this assignment you'll create a simple calculator that can read expressions
+from a String and produce a result.  The calculator will use a syntax referred to
+as "Reverse Polish Notation" (RPN) or "Postfix", which has historically been common
+among scientific calculators like those created by HP.</p>
+<h2>Set up</h2>
+<p>Begin by launching Eclipse/IntelliJ and starting a new Java project for your work.
+Download the assignment <em>zip</em> and extract it.  You
+should see two files:</p>
+<ul>
+<li><code>Calculator.java</code></li>
+<li><code>CalculatorTests.java</code></li>
+</ul>
+<h2>Calculator Design</h2>
+<p>The calculator is based on a stack. It works as follows:</p>
+<p>(1) when a number is entered, push it onto a stack.
+(2) when an operator is entered, pop the appropriate number of
+    arguments off the stack, perform the operation, and push the result
+    back onto the stack
+(3) when no more numbers or operators are left to process, pop the
+    top value off the stack. This is the 'answer'.</p>
+<p>We will use String expressions to interact with the calculator. A
+valid String consists of 1 or more numbers and 0 or more operators
+that are separated by whitespace (spaces, tabs).  Collectively, we'll
+refer to numbers or operators as "tokens".  For example, the String "4
+2 +" contains two numbers: 4, and 2; and one operator "+".  Thus,
+there are three tokens.  Evaluating the String should begin a process
+that reads in each token and takes an action based on the token's type
+(either number or operator). For the String above, this process should
+unfold as follows: (1) push the value 4 onto the stack; (2) push the
+value 2 onto the stack; (3) pop two values off the stack, compute 4 +
+2 and push the result, 6, onto the stack.  Then (4) since the
+expression is fully processed (i.e., there are no more tokens are left
+to process), we should pop the top element off the stack, here it is
+6, and return that value as the answer.</p>
+<h2>Implementing the Calculator</h2>
+<p>The <code>Calculator.java</code> file contains a partially implemented
+class.  Your job is to complete it.</p>
+<p>To get you started, the skeleton code contains method signatures for
+all of the methods that you must implement. Look through the code, and consider:</p>
+<p>1) <em>what instance variables</em> will you need to support your work? Hint, use an array of
+<code>double</code> values for your stack.</p>
+<p>2) <em>how</em> will you process the string expression? Here, you'll likely want to make use of the
+<code>Scanner</code> class that we used earlier. A <code>Scanner</code> instance can be created by passing a
+String as an argument to the <code>Scanner</code> constructor. The <code>Scanner</code> then has several valuable methods
+that let us process the String and extract tokens from it.  Specifically, the following methods
+will be useful to you: (1) <code>hasNext()</code> returns true iff there is another token in the input (here the
+input is a String); (2) <code>hasNextDouble()</code> returns true iff the next
+token can be turned into a double (i.e., the next token is a valid number);
+(3) <code>next()</code> retrieve the next token as a String; (4) <code>nextDouble()</code> return the
+next token and attempt to turn it into a double.  Note
+that if the next token is actually "cheese" and you call <code>nextDouble()</code> the Scanner will attempt to turn the
+token "cheese" into a number and fail, throwing an exception.</p>
+<h2>Example Expressions</h2>
+<p>See the provided <code>main()</code> for examples.</p>
+<p>Autolab will not test for the thrown exceptions. This will come from the TA points.</p>
+<h2>Turning it in</h2>
+<p>Turn in the final version of your <code>Calculator.java</code> file via Autolab.</p>
+<h2>Scoring</h2>
+<ul>
+<li>30 Points will be ascribed to Autolab testing</li>
+<li>10 Points will be given for style</li>
+</ul>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CS122.iml" filepath="$PROJECT_DIR$/.idea/CS122.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW2 Pirate Translate/HW2 Pirate Translate.iml" filepath="$PROJECT_DIR$/HW2 Pirate Translate/HW2 Pirate Translate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW3 String Operations/HW3 String Operations.iml" filepath="$PROJECT_DIR$/HW3 String Operations/HW3 String Operations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW4 Linked List/HW4 Linked List.iml" filepath="$PROJECT_DIR$/HW4 Linked List/HW4 Linked List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW5 Stack Calculator/HW5 Stack Calculator.iml" filepath="$PROJECT_DIR$/HW5 Stack Calculator/HW5 Stack Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW6 BST/HW6 BST.iml" filepath="$PROJECT_DIR$/HW6 BST/HW6 BST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HW7 Hash Table/HW7 Hash Table.iml" filepath="$PROJECT_DIR$/HW7 Hash Table/HW7 Hash Table.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Invaders/Invaders.iml" filepath="$PROJECT_DIR$/Invaders/Invaders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wordle/Wordle.iml" filepath="$PROJECT_DIR$/Wordle/Wordle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wordle Bot/Wordle Bot.iml" filepath="$PROJECT_DIR$/Wordle Bot/Wordle Bot.iml" />
+    </modules>
+  </component>
+</project>
